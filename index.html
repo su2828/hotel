@@ -1,0 +1,117 @@
+---
+layout: base
+---
+
+<!-- /////////////////////////////////////////Content -->
+<div id="page-content">
+
+<!-- ////////////Content Box 01 -->
+<section class="box-content box-1">
+	<div class="container">
+		<div class="heading">
+			<h2>
+				<span class="hr">欢迎!</span>
+			</h2>
+			<div class="intro">初游唐安饭薏米，炊成不减雕胡美。<br/> 大如苋实白如玉，滑欲流匙香满屋。</div>
+		</div>
+		
+		<div class="row">
+			<p>顺着人流，我们来到了蒙古烤肉区。这地方可真有意思！烟雾袅袅，服务员们穿着各式蒙古服装，边烤肉边跳舞，快乐得不亦乐乎。看着看着，我也不禁扭动身体跳了起来。这儿的肉可真多，有牛肉，有羊肉，有马肉，甚至还有骆驼肉！我可从来没有吃过骆驼肉，不知道是什么滋味，真想尝一口啊！</p>
+		</div>
+
+	</div>
+</section>
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+
+<!-- ////////////Content Box 02 -->
+<section class="box-content box-2 box-style-1" id="services">
+	<div class="container">
+		<div class="heading">
+			<h2>
+				<span class="hr">甜点</span>
+			</h2>
+		</div>
+		<div class="row">
+	{% for post in site.posts %}
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="item-container">
+					<a href="#">
+						<div class="item-caption">
+							<div class="item-caption-inner">
+								<div class="item-caption-inner1">
+									<h3>$45</h3>
+									<span>Only</span>
+								</div>
+							</div>
+						</div>
+						<img src="images/menu-1.jpg" />
+					</a>
+				</div>
+			</div>
+	{% endfor %}
+		</div>
+	</div>
+</section>
+
+<!-- ////////////Content Box 3 -->
+<section class="box-content box-3 box-style-3">
+	<div class="container">
+		<div class="heading">
+			<h2>
+				<span class="hr" style="color: #fff;">厨师</span>
+			</h2>
+		</div>  
+		<div class="row">
+			<div id="owl-brand" class="owl-carousel">
+			<!-- 循环的开始 -->
+				 {% for post in site.posts %}
+				<div class="item text-center">
+					<img src="{{post.nameurl}}" class="img-circle" />
+					<p>{{post.title}}</p>
+					<span>{{post.author}}</span>
+				</div>
+				{% endfor %}
+			<!-- 循环的结束 -->
+			</div>
+		</div>
+
+</section>
+
+<!-- ////////////Content Box 04 -->
+<section class="box-content box-4 box-style-1" id="services">
+	<div class="container">
+		<div class="heading">
+			<h2>
+				<span class="hr">信息化</span>
+			</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="service">
+					<a href="single.html"><img src="images/icon1.png" title="icon-name"></a>
+					<h3>成功</h3>
+					<p>驾驭命运的舵是奋斗。不抱有一丝幻想，不放弃一点机会，不停止一日努力。 </p>
+					<a class="btn btn-2 btn-sm" href="">阅读更多</a>
+					
+				</div>
+	 		</div>
+	 		<div class="col-sm-4">
+				<div class="service">
+					<a href="contact.html"><img src="images/icon3.png" title="icon-name"></a>
+					<h3>地图</h3>
+					<p>人生,需要有一些时刻,慢下来,静下来,听一听花开的声音,看一看叶子舒卷的曼妙。 </p>
+					<a class="btn btn-2 btn-sm" href="">阅读更多</a>
+				</div>
+	 		</div>
+	 		<div class="col-sm-4">
+				<div class="service">
+					<a href="menu.html"><img src="images/icon2.png" title="icon-name"></a>
+					<h3>菜单</h3>
+					<p>梦里，有你隐隐约约的身影，那般孤寂,那般高傲，绝然盛开，在生命那岸。 </p>
+					<a class="btn btn-2 btn-sm" href="">阅读更多</a>
+				</div>
+	 		</div>	
+		</div>
+	</div>
+</section>
+
