@@ -55,26 +55,35 @@ layout: base
 
 <!-- ////////////Content Box 3 -->
 <section class="box-content box-3 box-style-3">
-	<div class="container">
-		<div class="heading">
-			<h2>
-				<span class="hr" style="color: #fff;">厨师</span>
-			</h2>
-		</div>  
-		<div class="row">
-			<div id="owl-brand" class="owl-carousel">
-			<!-- 循环的开始 -->
-				 {% for post in site.posts %}
-				<div class="item text-center">
-					<img src="{{post.nameurl}}" class="img-circle" />
-					<p>{{post.title}}</p>
-					<span>{{post.author}}</span>
-				</div>
-				{% endfor %}
-			<!-- 循环的结束 -->
+<div class="container">
+	<div class="heading">
+		<h2>
+			<span class="hr" style="color: #fff;">厨师</span>
+		</h2>
+	</div>  
+	<div class="row">
+		<div id="owl-brand" class="owl-carousel">
+		<!-- 循环的开始 -->
+			 <!-- {% for post in site.posts %} -->
+			<div class="item text-center">
+				<img src="images/partner1.jpg" class="img-circle" />
+				<p>守住心底那最美风景，成为一种风度，宁静而致远;守住记忆里最美风景，成为一种境界，悠然而豁达！<br/>守住生命中最美风景，成为一种睿智，淡定而从容！</p>
+				<span>沃尔夫冈·帕克</span>
 			</div>
+			<div class="item text-center">
+				<img src="images/partner2.jpg" class="img-circle" />
+				<p>守住心底那最美风景，成为一种风度，宁静而致远;守住记忆里最美风景，成为一种境界，悠然而豁达！<br/>守住生命中最美风景，成为一种睿智，淡定而从容！</p>
+				<span>沃尔夫冈·帕克</span>
+			</div>
+			<div class="item text-center">
+				<img src="images/partner3.jpg" class="img-circle" />
+				<p>守住心底那最美风景，成为一种风度，宁静而致远;守住记忆里最美风景，成为一种境界，悠然而豁达！<br/>守住生命中最美风景，成为一种睿智，淡定而从容！</p>
+				<span>沃尔夫冈·帕克</span>
+			</div>
+			<!-- {% endfor %} -->
+		<!-- 循环的结束 -->
 		</div>
-
+	</div>
 </section>
 
 <!-- ////////////Content Box 04 -->
